@@ -1,0 +1,30 @@
+.navbar-light {
+  background-color: #5c353c;
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  padding: 2rem 0;
+}
+
+.navbar-light .nav-item .nav-link {
+  color: #efefdf;
+}
+
+.navbar-light .nav-item .nav-link:hover {
+  text-decoration: underline;
+}
+
+.custom-container {
+  width: 80%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.custom-container img {
+  width: 300px;
+  border-radius: 9px;
+}
