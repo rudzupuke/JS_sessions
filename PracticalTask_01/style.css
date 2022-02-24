@@ -1,0 +1,23 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: "Roboto Mono", monospace;
+}
+
+.result-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.result-container h2 {
+  max-width: 800px;
+}
