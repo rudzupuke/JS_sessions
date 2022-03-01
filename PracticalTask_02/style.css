@@ -1,0 +1,54 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto Mono", monospace;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.click-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.click-container p {
+  font-size: 25px;
+}
+
+.cookie {
+  width: 200px;
+  height: 200px;
+  background-color: #ae834d;
+  border-radius: 50%;
+  position: relative;
+  border: 4px solid rgb(85, 47, 19);
+  cursor: pointer;
+}
+
+.reset {
+  margin-top: 40px;
+  border: 2px solid rgb(85, 47, 19);
+  padding: 0.5em 1em;
+  border-radius: 9px;
+  cursor: pointer;
+  background-color: #fff;
+}
+
+.reset:hover {
+  background-color: rgb(85, 47, 19);
+  color: white;
+}
