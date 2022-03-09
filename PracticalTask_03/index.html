@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="calculator">
+      <div class="calculator__screen">
+        <div class="operation">
+          <span class="op-mini"></span>
+        </div>
+        <div class="input"><span class="input-main"></span></div>
+      </div>
+      <div class="calculator__buttons">
+        <div class="row-1">
+          <div class="btn btn-c btn-other" id="C">C</div>
+          <div class="btn btn-c btn-other"></div>
+          <div class="btn btn-percent" id="%">%</div>
+          <div class="btn btn-num btn-op" id="/">/</div>
+        </div>
+        <div class="row-2">
+          <div class="btn btn-num btn-n" id="7">7</div>
+          <div class="btn btn-num btn-n" id="8">8</div>
+          <div class="btn btn-num btn-n" id="9">9</div>
+          <div class="btn btn-num btn-op" id="*">*</div>
+        </div>
+        <div class="row-3">
+          <div class="btn btn-num btn-n" id="4">4</div>
+          <div class="btn btn-num btn-n" id="5">5</div>
+          <div class="btn btn-num btn-n" id="6">6</div>
+          <div class="btn btn-num btn-op" id="-">-</div>
+        </div>
+        <div class="row-4">
+          <div class="btn btn-num btn-n" id="1">1</div>
+          <div class="btn btn-num btn-n" id="2">2</div>
+          <div class="btn btn-num btn-n" id="3">3</div>
+          <div class="btn btn-num btn-op" id="+">+</div>
+        </div>
+        <div class="row-5">
+          <div class="btn btn-num btn-0" id="0">0</div>
+          <div class="btn btn-num btn-other" id=".">.</div>
+          <div class="btn btn-backspace btn-other" id="bcsl">⌫</div>
+          <div class="btn btn-equals btn-other" id="=">=</div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
