@@ -7,20 +7,44 @@ const c = $(".btn-c");
 const backspace = $(".btn-backspace");
 
 let currentResult = "";
+let miniResult = "";
+let result;
 
 function add() {
-  const id = $(this).attr("id");
+  let id = $(this).attr("id");
+  if (id == "%") {
+    id = "/100";
+  }
   currentResult += id;
+  miniResult += id;
   input.text(currentResult);
-  if (id == "+" || id == "-" || id == "*" || id == "/") {
-    opMini.text(currentResult);
+  if (
+    miniResult.includes("+") ||
+    miniResult.includes("-") ||
+    miniResult.includes("*") ||
+    miniResult.includes("/")
+  ) {
+    opMini.text(miniResult);
   }
 }
 
 function showResult() {
-  opMini.text(currentResult);
-  let newResult = eval(currentResult);
-  input.text(newResult.toFixed(3));
+  opMini.text(miniResult);
+  result = eval(currentResult);
+  let resultString = result.toString();
+  input.text(result);
+
+  if (resultString.includes(".")) {
+    if (resultString.split(".")[1].length > 1) {
+      input.text(result.toFixed(2));
+      currentResult = result.toFixed(2);
+    } else {
+      input.text(result);
+      currentResult = result;
+    }
+  } else {
+    currentResult = result;
+  }
 }
 
 function deleteChar() {
@@ -32,7 +56,8 @@ function deleteChar() {
 
 function reset() {
   currentResult = "";
-
+  miniResult = "";
+  result = "";
   input.text("");
   opMini.text("");
 }
